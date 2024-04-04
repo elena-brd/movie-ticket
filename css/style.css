@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Didact+Gothic&family=Noto+Sans+Hatran&family=Noto+Sans+Khojki&family=Noto+Sans+Lao+Looped:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #dee4e4;
+    color: #333;
+    padding: 0 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-next {
+    color: #333;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-next:hover {
+    background: #dee4e4;
+}
+
+.btn-back {
+    padding: 1rem;
+}
+
+.container {
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.available i {
+    color: #1d3557;
+    font-size: 1.3rem;
+}
+
+.booked i {
+    color: #a8dadc;
+    font-size: 1.3rem;
+}
+
+.selected i {
+    color: #e63946;
+    font-size: 1.3rem;
+}
+
+/* card */
+#movie-card.movie-card {
+    background: #fff;
+    width: 100%;
+    max-width: 600px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0px 2px 8px 1px rgba(191,191,191,1);
+}
+
+#movie-card .image-card-info{
+    height: 350px;
+    background-image: url('../images/guardians.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 0px #000,
+        inset 0px -50px 250px #000;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#movie-card .image-card-info i {
+    color: #fff;
+}
+
+#movie-card .image-card-info {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#movie-card .title {
+    padding: 1rem;
+}
+
+#movie-card .title h3 {
+    padding-bottom: 0.5rem;
+}
+
+/* seats */
+#movie-card .seats-availability {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 1.8rem 0 0.5rem;
+}
+
+#movie-card .seats-info {
+    padding: 1rem 4rem;
+}
+#movie-card .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#movie-card .g-seats,
+#movie-card .f-seats,
+#movie-card .e-seats,
+#movie-card .d-seats,
+#movie-card .c-seats,
+#movie-card .b-seats, 
+#movie-card .a-seats {
+    display: flex;
+}
+
+#movie-card .g-seats div,
+#movie-card .f-seats div,
+#movie-card .e-seats div,
+#movie-card .d-seats div,
+#movie-card .c-seats div,
+#movie-card .b-seats div,
+#movie-card .a-seats div {
+    margin-left: 1.5rem;
+}
+
+#movie-card .screen p {
+    text-align: center;
+    padding: 1.5rem 0 0.5rem;
+    color: #969696;
+}
+
+#movie-card .divider {
+    padding: 0.05rem;
+    background: #1d3557;
+}
+
+#movie-card .total-info {
+    background: #e63946;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#movie-card .date-info {
+    padding-right: 1.5rem;
+}
+
+#movie-card .price-info-details {
+    display: flex;
+}
+
+#movie-card .total-info h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0.2rem 0;
+}
+
